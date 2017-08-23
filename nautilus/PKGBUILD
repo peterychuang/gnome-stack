@@ -3,7 +3,7 @@
 
 pkgbase=nautilus
 pkgname=(nautilus libnautilus-extension)
-pkgver=3.25.1+166+g73bdc5ab5
+pkgver=3.25.1+169+g3bed0e624
 pkgrel=1
 pkgdesc="Default file manager for GNOME"
 url="https://wiki.gnome.org/Apps/Nautilus"
