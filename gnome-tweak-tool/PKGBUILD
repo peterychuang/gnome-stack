@@ -1,0 +1,40 @@
+# $Id: PKGBUILD 298712 2017-06-12 19:22:23Z heftig $
+# Contributor: Ionut Biru <ibiru@archlinux.org>
+
+pkgname=gnome-tweak-tool
+pkgver=3.25.90.1+12+ga517856
+pkgrel=1
+pkgdesc="Customize advanced GNOME 3 options"
+arch=(any)
+url="https://wiki.gnome.org/Apps/GnomeTweakTool"
+license=(GPL)
+depends=(gnome-settings-daemon python2-gobject)
+makedepends=(intltool gnome-common git)
+groups=(gnome-extra)
+_commit=c2d12aa59a74739051a9ddbd131059e76cd67d74  # tags/3.24.1^0
+source=("git+https://git.gnome.org/browse/gnome-tweak-tool#branch=master")
+sha256sums=('SKIP')
+
+pkgver() {
+  cd $pkgname
+  git describe --tags | sed 's/-/+/g'
+}
+
+prepare() {
+  mkdir build
+  cd $pkgname
+}
+
+build() {
+  cd build
+  meson --prefix=/usr ../$pkgname --libexecdir=/usr/lib/ \
+    -Dtests=false
+  ninja
+}
+
+package() {
+  cd build
+  DESTDIR="$pkgdir" ninja install
+}
+
+# vim:set ts=2 sw=2 et:

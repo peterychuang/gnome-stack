@@ -1,0 +1,39 @@
+# $Id: PKGBUILD 292632 2017-04-12 14:44:26Z jgc $
+# Maintainer: Ionut Biru <ibiru@archlinux.org>
+
+pkgname=gnome-dictionary
+pkgver=3.25.90+8+ga3bd54f
+pkgrel=1
+pkgdesc="Look up words in dictionary sources"
+arch=(i686 x86_64)
+url="https://wiki.gnome.org/Apps/Dictionary"
+license=('GPL2')
+depends=('dconf' 'gtk3')
+makedepends=('intltool' 'itstool' 'docbook-xsl' gtk-doc yelp-tools git gobject-introspection)
+groups=('gnome')
+_commit=a7aa0541016aeffeafd5adbd123ac669e27c13e8  # gnome-3-24
+source=("git+https://git.gnome.org/browse/gnome-dictionary#branch=master")
+sha256sums=('SKIP')
+
+pkgver() {
+  cd $pkgname
+  git describe --tags | sed 's/-/+/g'
+}
+
+prepare() {
+  mkdir build
+  cd $pkgname
+}
+
+build() {
+  cd build
+  meson --prefix=/usr ../$pkgname
+  ninja
+}
+
+package() {
+  cd build
+  DESTDIR="$pkgdir" ninja install
+}
+
+# vim:set ts=2 sw=2 et:
