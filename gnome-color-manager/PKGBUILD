@@ -1,0 +1,44 @@
+# $Id$
+# Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
+
+pkgname=gnome-color-manager
+pkgver=3.25.90+3+g42609bf
+pkgrel=1
+pkgdesc="GNOME Color Profile Tools"
+arch=(i686 x86_64)
+url="https://git.gnome.org/browse/gnome-color-manager"
+license=(GPL2)
+depends=(libcanberra vte3 exiv2 shared-color-targets colord-gtk libexif)
+makedepends=(intltool yelp-tools git gnome-common appstream-glib)
+optdepends=('argyllcms: color calibration')
+options=('!emptydirs')
+groups=('gnome-extra')
+_commit=e78025ac3ef768eecd0051748044113dc3dcb4eb  # master
+source=("git+https://git.gnome.org/browse/gnome-color-manager#branch=master")
+sha256sums=('SKIP')
+
+pkgver() {
+  cd $pkgname
+  git describe --tags | sed -e 's/GNOME_COLOR_MANAGER_//' -e 's/_/\./g' -e 's/-/+/g'
+}
+
+prepare() {
+  mkdir build
+  cd $pkgname
+}
+  
+
+build(){
+  cd build
+
+  # man pages need docbook-sgml, which we don't have
+  meson --prefix=/usr --sysconfdir=/etc --localstatedir=/var \
+      --libexecdir=/usr/lib/gnome-color-manager ../$pkgname
+
+  ninja
+}
+
+package() {
+  cd build
+  DESTDIR="$pkgdir" ninja install
+}

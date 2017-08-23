@@ -1,0 +1,32 @@
+pkgname=gnome-usage
+pkgver=0.4.5.47.g334621d
+pkgrel=1
+pkgdesc="A nice way to view information about use of system resources"
+arch=('x86_64')
+url="https://wiki.gnome.org/Apps/Usage"
+license=('AGPL3')
+depends=('gtk3' 'libgtop')
+makedepends=('git' 'vala' 'gobject-introspection' 'meson')
+source=("git+https://git.gnome.org/browse/gnome-usage#branch=master")
+md5sums=('SKIP')
+
+pkgver() {
+  cd $pkgname
+  git describe | sed 's/^v//;s/-/./g;s/_/./g;'
+}
+
+prepare() {
+  mkdir build
+  cd $pkgname
+}
+
+build() {
+  cd build
+  meson --prefix=/usr ../$pkgname
+  ninja
+}
+
+package() {
+  cd build
+  DESTDIR="$pkgdir" ninja install
+}
