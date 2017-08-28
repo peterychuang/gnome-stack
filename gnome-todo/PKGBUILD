@@ -1,0 +1,40 @@
+# $Id$
+# Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
+
+pkgname=gnome-todo
+pkgver=3.25.3+53+g56d0438
+pkgrel=1
+pkgdesc="Task manager for GNOME"
+url="https://wiki.gnome.org/Apps/Todo"
+arch=(i686 x86_64)
+license=(GPL)
+depends=(evolution-data-server libpeas)
+makedepends=(intltool gobject-introspection gnome-common appstream-glib git)
+optdepends=('python3: Some plugins')
+groups=(gnome-extra)
+_commit=fc5c2f1a9e646356a6166605c4c5c15f8aae50a6  # tags/GNOME_TODO_3_24_2^0
+source=("git+https://git.gnome.org/browse/gnome-todo#branch=master")
+sha256sums=('SKIP')
+
+pkgver() {
+  cd $pkgname
+  git describe --tags | sed 's/^GNOME_TODO_//;s/_/./g;s/-/+/g'
+}
+
+prepare() {
+  mkdir build
+  cd $pkgname
+}
+
+build() {
+  cd build
+  meson --prefix=/usr ../$pkgname
+  ninja
+}
+
+package() {
+  cd build
+  DESTDIR="$pkgdir" ninja install
+}
+
+# vim:set ts=2 sw=2 et:

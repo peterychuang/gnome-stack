@@ -3,7 +3,7 @@
 # Contributor: Jan de Groot <jgc@archlinux.org>
 
 pkgname=gnome-control-center
-pkgver=3.25.91+3+g8c489d948
+pkgver=3.25.91+19+g1f1533cbf
 pkgrel=1
 pkgdesc="GNOME's main interface to configure various aspects of the desktop"
 url="https://git.gnome.org/browse/gnome-control-center"

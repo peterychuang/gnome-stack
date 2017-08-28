@@ -3,7 +3,7 @@
 # Contributor: Flamelab <panosfilip@gmail.com
 
 pkgname=gnome-shell
-pkgver=3.25.91+10+gdf8d797bc
+pkgver=3.25.91+21+g9cc143aae
 pkgrel=1
 pkgdesc="The next generation GNOME Shell"
 url="https://wiki.gnome.org/Projects/GnomeShell"

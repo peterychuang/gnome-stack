@@ -3,7 +3,7 @@
 # Contributor: Ionut Biru <ibiru@archlinux.org>
 
 pkgname=gnome-screenshot
-pkgver=3.25.0+30+gf084157
+pkgver=3.25.0+35+g90b9f1c
 pkgrel=1
 pkgdesc="Take pictures of your screen"
 url="https://git.gnome.org/browse/gnome-screenshot"

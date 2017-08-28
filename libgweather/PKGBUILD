@@ -2,7 +2,7 @@
 # Maintainer: Jan de Groot  <jgc@archlinux.org>
 
 pkgname=libgweather
-pkgver=3.25.91+22+g6d9afed
+pkgver=3.25.91+29+g2cf0578
 pkgrel=1
 pkgdesc="Location and timezone database and weather-lookup library"
 url="https://wiki.gnome.org/Projects/LibGWeather"

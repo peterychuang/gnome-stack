@@ -3,7 +3,7 @@
 # Contributor: Roman Kyrylych <roman@archlinux.org>
 
 pkgname=gnome-bluetooth
-pkgver=3.20.1+33+gaf2e540
+pkgver=3.20.1+39+g35f2392
 pkgrel=1
 pkgdesc="The GNOME Bluetooth Subsystem"
 url="https://wiki.gnome.org/Projects/GnomeBluetooth"
