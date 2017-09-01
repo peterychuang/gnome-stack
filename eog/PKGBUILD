@@ -14,7 +14,6 @@ makedepends=(intltool itstool gobject-introspection gtk-doc gnome-common git)
 optdepends=('eog-plugins: Additional features')
 groups=(gnome)
 options=(!emptydirs)
-_commit=c665b86c19cec9e9ec783adb062c387ddb46958c  # tags/3.24.1^0
 source=("git+https://git.gnome.org/browse/eog#branch=master")
 sha256sums=('SKIP')
 

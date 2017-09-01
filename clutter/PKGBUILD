@@ -12,7 +12,6 @@ arch=(i686 x86_64)
 license=(LGPL)
 depends=(gtk3 cogl libinput)
 makedepends=(gobject-introspection gtk-doc git)
-_commit=2faa83baf3ce9b9c94635311ad79944ab2a73c84  # tags/1.26.2^0
 source=("git+https://git.gnome.org/browse/clutter#branch=master")
 sha256sums=('SKIP')
 

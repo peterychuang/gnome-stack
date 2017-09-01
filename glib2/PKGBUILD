@@ -10,7 +10,6 @@ url="http://www.gtk.org/"
 arch=(i686 x86_64)
 makedepends=(gettext gtk-doc libffi pcre zlib shared-mime-info python libelf git util-linux)
 checkdepends=(desktop-file-utils dbus)
-_commit=90bb8778f2eabf00bee5bff1259c48f1e7b791b8  # tags/2.52.3^0
 source=("git+https://git.gnome.org/browse/glib#branch=master"
         glib-compile-schemas.hook
         gio-querymodules.hook

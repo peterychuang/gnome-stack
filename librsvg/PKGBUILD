@@ -2,7 +2,7 @@
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=librsvg
-pkgver=2.41.0+349+g95355f7
+pkgver=2.41.0+369+gbdc1d2c
 pkgrel=1
 epoch=2
 pkgdesc="SVG rendering library"

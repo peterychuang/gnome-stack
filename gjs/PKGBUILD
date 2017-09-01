@@ -2,7 +2,7 @@
 # Contributor: Ionut Biru <ibiru@archlinux.org>
 
 pkgname=gjs
-pkgver=1.49.91+5+ga466354
+pkgver=1.49.91+20+geba8ff7
 pkgrel=1
 pkgdesc="Javascript Bindings for GNOME"
 url="https://wiki.gnome.org/Projects/Gjs"
@@ -10,11 +10,8 @@ arch=(i686 x86_64)
 license=(GPL)
 depends=(cairo gobject-introspection-runtime js52 gtk3)
 makedepends=(gobject-introspection git gnome-common)
-_commit=a9db649304db525ca166ec0845ee7a86cea4bf7f  # tags/1.48.6^0
-source=("git+https://git.gnome.org/browse/gjs#branch=master"
-        d2b083cf3ee74952802f3d8457ee7e24173ba303.patch)
-sha256sums=('SKIP'
-            'SKIP')
+source=("git+https://git.gnome.org/browse/gjs#branch=master")
+sha256sums=('SKIP')
 
 pkgver() {
   cd $pkgname
@@ -23,7 +20,6 @@ pkgver() {
 
 prepare() {
   cd $pkgname
-  patch -Np1 < ../d2b083cf3ee74952802f3d8457ee7e24173ba303.patch
   NOCONFIGURE=1 ./autogen.sh
 }
 

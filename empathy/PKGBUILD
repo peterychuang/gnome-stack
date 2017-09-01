@@ -2,7 +2,7 @@
 # Contributor: Ionut Biru <ibiru@archlinux.org>
 
 pkgname=empathy
-pkgver=3.25.90+5+g24708b78d
+pkgver=3.25.90+12+ga4d58e599
 pkgrel=1
 pkgdesc="A GNOME instant messaging client using the Telepathy framework"
 url="https://wiki.gnome.org/Apps/Empathy"
@@ -18,7 +18,6 @@ optdepends=('telepathy-gabble: XMPP/Jabber support'
             'telepathy-rakia: SIP support'
             'telepathy-haze: libpurple support')
 groups=(gnome)
-_commit=4a4b45b94861688a79bab5ec699f075a86977ffe  # master
 source=("git+https://git.gnome.org/browse/empathy#branch=master"
         "git+https://git.gnome.org/browse/telepathy-account-widgets")
 sha256sums=('SKIP'

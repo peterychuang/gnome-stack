@@ -4,7 +4,7 @@
 
 pkgbase=gtk3
 pkgname=(gtk3 gtk-update-icon-cache gtk3-print-backends)
-pkgver=3.22.19+13+g53be5d2fc9
+pkgver=3.22.19+85+g423cd8e73e
 pkgrel=1
 pkgdesc="GObject-based multi-platform GUI toolkit"
 arch=(i686 x86_64)

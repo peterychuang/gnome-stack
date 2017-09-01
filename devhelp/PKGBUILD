@@ -13,7 +13,6 @@ url="https://wiki.gnome.org/Apps/Devhelp"
 depends=(webkit2gtk)
 makedepends=(pkgconfig python gnome-common git appstream-glib autoconf-archive gobject-introspection)
 groups=(gnome-extra)
-_commit=efb59e267e097110f20f6c4f4f66bfa5081a3a99  # gnome-3-24
 source=("git://git.gnome.org/devhelp#branch=master")
 sha256sums=('SKIP')
 

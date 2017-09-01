@@ -3,7 +3,7 @@
 # Contributor: Roman Kyrylych <roman@archlinux.org>
 
 pkgname=gnome-bluetooth
-pkgver=3.20.1+39+g35f2392
+pkgver=3.25.91+3+ga70bace
 pkgrel=1
 pkgdesc="The GNOME Bluetooth Subsystem"
 url="https://wiki.gnome.org/Projects/GnomeBluetooth"
@@ -11,7 +11,6 @@ arch=(i686 x86_64)
 license=(GPL LGPL)
 depends=(gtk3 libnotify bluez libcanberra libsystemd pulseaudio-bluetooth)
 makedepends=(intltool gobject-introspection itstool docbook-xsl gnome-common git systemd)
-_commit=e902d1aca835bfc823e5e4cf2b37f5444d606042  # master
 source=("git+https://git.gnome.org/browse/gnome-bluetooth#branch=master"
         61-gnome-bluetooth-rfkill.rules)
 sha256sums=('SKIP'
@@ -29,11 +28,7 @@ prepare() {
 
 build() {
   cd build
-  meson --prefix=/usr \
-    --sysconfdir=/etc \
-    --localstatedir=/var \
-    ../$pkgname
-
+  meson --prefix=/usr --sysconfdir=/etc --localstatedir=/var ../$pkgname
   ninja
 }
 

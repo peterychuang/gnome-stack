@@ -2,7 +2,7 @@
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=libgtop
-pkgver=2.37.90+5+g609b8c7e
+pkgver=2.37.90+12+g7dcc6c51
 pkgrel=1
 pkgdesc="A library that reads information about processes and the running system"
 arch=('i686' 'x86_64')

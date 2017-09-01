@@ -2,7 +2,7 @@
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
 pkgname=gnome-shell-extensions
-pkgver=3.25.91+1+g5530229
+pkgver=3.25.91+9+g74fdac5
 pkgrel=1
 pkgdesc="Extensions for GNOME shell, including classic mode"
 url="https://wiki.gnome.org/Projects/GnomeShell/Extensions"
