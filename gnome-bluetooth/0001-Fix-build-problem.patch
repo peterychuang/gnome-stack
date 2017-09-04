@@ -1,0 +1,25 @@
+From 41c2cb5edb4439f47c35a69dccd169d4a92413a3 Mon Sep 17 00:00:00 2001
+From: "Peter Y. Chuang" <peteryuchuang@gmail.com>
+Date: Mon, 4 Sep 2017 12:25:48 +0200
+Subject: [PATCH] Fix build problem
+
+---
+ meson_post_install.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/meson_post_install.py b/meson_post_install.py
+index ffcc071..c6a4435 100644
+--- a/meson_post_install.py
++++ b/meson_post_install.py
+@@ -9,7 +9,7 @@ import sys
+ name_pattern = re.compile('hicolor_(?:apps|status)_(?:\d+x\d+|scalable)_(.*)')
+ search_pattern = '/**/hicolor_*'
+ 
+-icon_dir = os.path.join(os.environ['MESON_INSTALL_PREFIX'], 'share', 'icons', 'hicolor')
++icon_dir = os.path.join(os.environ.get('DESTDIR'), 'usr', 'share', 'icons', 'hicolor')
+ [os.rename(file, os.path.join(os.path.dirname(file), name_pattern.search(file).group(1)))
+  for file in glob.glob(icon_dir + search_pattern, recursive=True)]
+ 
+-- 
+2.14.1
+
