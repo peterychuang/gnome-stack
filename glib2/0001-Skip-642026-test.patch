@@ -1,0 +1,24 @@
+From b8863079e353590009374d2d993d364c2dfeb658 Mon Sep 17 00:00:00 2001
+From: "Peter Y. Chuang" <peteryuchuang@gmail.com>
+Date: Wed, 6 Sep 2017 12:52:07 +0200
+Subject: [PATCH] Skip 642026 test
+
+---
+ glib/tests/Makefile.am | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/glib/tests/Makefile.am b/glib/tests/Makefile.am
+index b3983d3bd..e0c9460d4 100644
+--- a/glib/tests/Makefile.am
++++ b/glib/tests/Makefile.am
+@@ -116,7 +116,6 @@ test_programs = \
+ 	unicode				\
+ 	uri				\
+ 	1bit-mutex			\
+-	642026				\
+ 	$(NULL)
+ 
+ uninstalled_test_programs = \
+-- 
+2.14.1
+
