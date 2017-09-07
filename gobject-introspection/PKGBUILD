@@ -4,7 +4,7 @@
 pkgbase=gobject-introspection
 pkgname=('gobject-introspection' 'gobject-introspection-runtime')
 pkgdesc="Introspection system for GObject-based libraries"
-pkgver=1.53.5+1+gd90b3837
+pkgver=1.53.7
 pkgrel=1
 url="https://wiki.gnome.org/Projects/GObjectIntrospection"
 arch=('x86_64' 'i686')

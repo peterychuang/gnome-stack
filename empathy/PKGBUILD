@@ -2,7 +2,7 @@
 # Contributor: Ionut Biru <ibiru@archlinux.org>
 
 pkgname=empathy
-pkgver=3.25.90+12+ga4d58e599
+pkgver=3.25.90+23+gedc9b8c56
 pkgrel=1
 pkgdesc="A GNOME instant messaging client using the Telepathy framework"
 url="https://wiki.gnome.org/Apps/Empathy"

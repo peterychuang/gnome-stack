@@ -4,7 +4,7 @@
 
 pkgbase=gdm
 pkgname=(gdm libgdm)
-pkgver=3.25.90+8+g257031da
+pkgver=3.25.90+21+g80c25d24
 pkgrel=1
 pkgdesc="Display manager and login screen"
 arch=(i686 x86_64)

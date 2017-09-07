@@ -4,7 +4,7 @@
 # Contributor: John Proctor <jproctor@prium.net>
 
 pkgname=libxml2
-pkgver=2.9.5rc2+0+g69936b12
+pkgver=2.9.5+2+g3b3d7502
 pkgrel=1
 pkgdesc="XML parsing library, version 2"
 arch=(i686 x86_64)

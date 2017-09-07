@@ -2,7 +2,7 @@
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
 pkgname=gnome-font-viewer
-pkgver=3.25.90+14+g2f697e1
+pkgver=3.25.90+30+g8589125
 pkgrel=1
 pkgdesc="A font viewer utility for GNOME"
 url="https://git.gnome.org/browse/gnome-font-viewer"

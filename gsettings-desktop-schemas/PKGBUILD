@@ -4,7 +4,7 @@
 # Contributor: Adam Hani Schakaki (krzd) <krzd@krzd.net>
 
 pkgname=gsettings-desktop-schemas
-pkgver=3.24.0+22+gf163444
+pkgver=3.24.1
 pkgrel=1
 pkgdesc="Shared GSettings schemas for the desktop"
 arch=(any)

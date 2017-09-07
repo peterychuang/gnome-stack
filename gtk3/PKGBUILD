@@ -4,7 +4,7 @@
 
 pkgbase=gtk3
 pkgname=(gtk3 gtk-update-icon-cache gtk3-print-backends)
-pkgver=3.22.19+85+g423cd8e73e
+pkgver=3.22.20+14+g323ce68e98
 pkgrel=1
 pkgdesc="GObject-based multi-platform GUI toolkit"
 arch=(i686 x86_64)
@@ -30,7 +30,7 @@ sha256sums=('SKIP'
 
 pkgver() {
   cd gtk+
-  git describe --tags | sed 's/-/+/g'
+  git describe --tags | sed 's/-/+/g;s/v//g'
 }
 
 prepare() {

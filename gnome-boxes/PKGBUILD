@@ -3,7 +3,7 @@
 # Contributor: Stefano Facchini <stefano.facchini@gmail.com>
 
 pkgname=gnome-boxes
-pkgver=3.25.90+13+ga1f7ca55
+pkgver=3.25.90+28+g3607e985
 pkgrel=1
 pkgdesc="Simple GNOME application to access remote or virtual systems"
 arch=('i686' 'x86_64')

@@ -2,7 +2,7 @@
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
 pkgname=gnome-todo
-pkgver=3.25.3+53+g56d0438
+pkgver=3.25.3+60+gad43d86
 pkgrel=1
 pkgdesc="Task manager for GNOME"
 url="https://wiki.gnome.org/Apps/Todo"

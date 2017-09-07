@@ -4,7 +4,7 @@
 
 pkgbase=evolution
 pkgname=(evolution evolution-bogofilter evolution-spamassassin)
-pkgver=3.25.91+40+g3f892a0634
+pkgver=3.25.92.2+4+g0cd08f7708
 pkgrel=1
 pkgdesc="Manage your email, contacts and schedule"
 url="https://wiki.gnome.org/Apps/Evolution"
@@ -47,8 +47,8 @@ package_evolution() {
   mkdir ../plugins
   mv "$pkgdir/usr/lib/evolution/modules/module-bogofilter.so" ../plugins/
   mv "$pkgdir/usr/lib/evolution/modules/module-spamassassin.so" ../plugins/
-  mv "$pkgdir/usr/share/appdata/org.gnome.Evolution-bogofilter.metainfo.xml" ../plugins/
-  mv "$pkgdir/usr/share/appdata/org.gnome.Evolution-spamassassin.metainfo.xml" ../plugins/
+  mv "$pkgdir/usr/share/appdata/evolution-bogofilter.metainfo.xml" ../plugins/
+  mv "$pkgdir/usr/share/appdata/evolution-spamassassin.metainfo.xml" ../plugins/
 }
 
 
@@ -57,7 +57,7 @@ package_evolution-bogofilter() {
   depends=("evolution=$pkgver" bogofilter)
 
   install -Dm755 plugins/module-bogofilter.so "$pkgdir/usr/lib/evolution/modules/module-bogofilter.so"
-  install -Dm644 plugins/org.gnome.Evolution-bogofilter.metainfo.xml "$pkgdir/usr/share/appdata/org.gnome.Evolution-bogofilter.metainfo.xml"
+  install -Dm644 plugins/evolution-bogofilter.metainfo.xml "$pkgdir/usr/share/appdata/evolution-bogofilter.metainfo.xml"
 }
 
 package_evolution-spamassassin() {
@@ -65,5 +65,5 @@ package_evolution-spamassassin() {
   depends=("evolution=$pkgver" spamassassin)
 
   install -Dm755 plugins/module-spamassassin.so "$pkgdir/usr/lib/evolution/modules/module-spamassassin.so"
-  install -Dm644 plugins/org.gnome.Evolution-spamassassin.metainfo.xml "$pkgdir/usr/share/appdata/org.gnome.Evolution-spamassassin.metainfo.xml"
+  install -Dm644 plugins/evolution-spamassassin.metainfo.xml "$pkgdir/usr/share/appdata/evolution-spamassassin.metainfo.xml"
 }

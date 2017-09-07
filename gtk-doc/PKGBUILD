@@ -2,7 +2,7 @@
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=gtk-doc
-pkgver=1.26+10+g01844e7
+pkgver=1.26+13+g0609a89
 pkgrel=1
 pkgdesc="Documentation tool for public library API"
 url="https://www.gtk.org/gtk-doc/"

@@ -2,7 +2,7 @@
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
 pkgname=glib-networking
-pkgver=2.53.90+10+g82e3de7
+pkgver=2.53.90+19+gac12807
 pkgrel=1
 pkgdesc="Network extensions for GLib"
 url="https://git.gnome.org/browse/glib-networking"

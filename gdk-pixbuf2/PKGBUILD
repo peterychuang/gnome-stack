@@ -2,7 +2,7 @@
 # Contributor: Ionut Biru <ibiru@archlinux.org>
 
 pkgname=gdk-pixbuf2
-pkgver=2.36.9+3+g62c498a34
+pkgver=2.36.9+18+g442a51843
 pkgrel=1
 pkgdesc="An image loading library"
 arch=(i686 x86_64)

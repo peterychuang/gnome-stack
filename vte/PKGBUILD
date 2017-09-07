@@ -2,7 +2,7 @@
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=vte
-pkgver=0.49.1+18+gefbf38e3
+pkgver=0.49.92+2+gbdf5a0ea
 pkgrel=1
 pkgdesc="Virtual Terminal Emulator widget for use with GTK2"
 arch=('i686' 'x86_64')

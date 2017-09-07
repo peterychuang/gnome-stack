@@ -2,7 +2,7 @@
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=gnome-characters
-pkgver=3.22.0+63+g39739be
+pkgver=3.25.92+3+g981a35f
 pkgrel=1
 pkgdesc="A character map application"
 arch=(i686 x86_64)

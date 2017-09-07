@@ -2,7 +2,7 @@
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
 pkgname=gnome-session
-pkgver=3.25.90+8+g03f0d977
+pkgver=3.25.90+13+g3ef9795d
 pkgrel=1
 pkgdesc="The GNOME Session Handler"
 url="https://git.gnome.org/browse/gnome-session"

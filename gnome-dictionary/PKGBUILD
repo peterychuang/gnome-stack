@@ -2,7 +2,7 @@
 # Maintainer: Ionut Biru <ibiru@archlinux.org>
 
 pkgname=gnome-dictionary
-pkgver=3.25.90+8+ga3bd54f
+pkgver=3.25.90+23+gf65a92a
 pkgrel=1
 pkgdesc="Look up words in dictionary sources"
 arch=(i686 x86_64)

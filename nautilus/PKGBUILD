@@ -3,7 +3,7 @@
 
 pkgbase=nautilus
 pkgname=(nautilus libnautilus-extension)
-pkgver=3.25.1+182+g17a4f4365
+pkgver=3.25.92+10+g77d9e8b5c
 pkgrel=1
 pkgdesc="Default file manager for GNOME"
 url="https://wiki.gnome.org/Apps/Nautilus"
@@ -13,7 +13,7 @@ depends=(libexif gnome-desktop exempi gvfs dconf libtracker-sparql nautilus-send
 makedepends=(gobject-introspection packagekit git gtk-doc meson)
 options=(!emptydirs)
 _commit=d11d53db7fb3cdaa73aab653cec8a0a48579a936  # tags/3.24.2^0
-source=("git+https://git.gnome.org/browse/nautilus#branch=master"
+source=("git+https://gitlab.gnome.org/GNOME/nautilus.git#branch=master"
         "git+https://git.gnome.org/browse/libgd")
 sha256sums=('SKIP'
             'SKIP')
