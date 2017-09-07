@@ -31,6 +31,10 @@ pkgver() {
 prepare() {
   cd $pkgname
 
+  git revert -n 3afb04e5f39da5011571eecc2110ea123f2c04bd
+  git revert -n 5f75be45e3d06d679faac3420279f7533a5551c2
+  git revert -n cacdcd893237073e49ecc876fbea444cdcceb312
+
   git submodule init
   git config --local submodule.telepathy-account-widgets.url "$srcdir/telepathy-account-widgets"
   git submodule update
