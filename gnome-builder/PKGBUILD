@@ -2,7 +2,7 @@
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
 pkgname=gnome-builder
-pkgver=3.25.92+35+g5ed82c700
+pkgver=3.25.92+41+gb73326295
 pkgrel=1
 pkgdesc="An IDE for writing GNOME-based software"
 url="https://wiki.gnome.org/Apps/Builder"
@@ -14,8 +14,16 @@ makedepends=(intltool llvm gobject-introspection gtk-doc yelp-tools appstream-gl
              mm-common)
 optdepends=('gnome-code-assistance: Legacy assistance services')
 groups=(gnome-extra)
-source=("git+https://git.gnome.org/browse/gnome-builder#branch=master")
-sha256sums=('SKIP')
+source=("git+https://git.gnome.org/browse/gnome-builder#branch=master"
+        "git+https://git.gnome.org/browse/jsonrpc-glib"
+        "git+https://git.gnome.org/browse/libdazzle"
+        "git+https://git.gnome.org/browse/libgd"
+        "git+https://git.gnome.org/browse/template-glib")
+sha256sums=('SKIP'
+            'SKIP'
+            'SKIP'
+            'SKIP'
+            'SKIP')
 
 
 pkgver() {
@@ -26,6 +34,13 @@ pkgver() {
 prepare() {
   mkdir build
   cd $pkgname
+
+  git submodule init
+  git config --local submodule.jsonrpc-glib.url "subprojects/jsonrpc-glib"
+  git config --local submodule.libdazzle.url "subprojects/libdazzle"
+  git config --local submodule.libgd.url "subprojects/libgd"
+  git config --local submodule.template-glib.url "subprojects/template-glib"
+  git submodule update
 }
 
 build() {
