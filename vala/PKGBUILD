@@ -3,7 +3,7 @@
 # Contributor: Timm Preetz <timm@preetz.us>
 
 pkgname=vala
-pkgver=0.38.0+3+g09bbbfb62
+pkgver=0.38.0+12+g353ac46f2
 pkgrel=1
 pkgdesc='Compiler for the GObject type system'
 url='https://wiki.gnome.org/Projects/Vala'

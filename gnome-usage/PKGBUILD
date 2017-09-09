@@ -1,5 +1,5 @@
 pkgname=gnome-usage
-pkgver=0.4.5.47.g334621d
+pkgver=0.4.5.52.g309db9b
 pkgrel=1
 pkgdesc="A nice way to view information about use of system resources"
 arch=('x86_64')
