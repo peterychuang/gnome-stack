@@ -2,7 +2,7 @@
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=epiphany
-pkgver=3.25.92+5+gac126bdaf
+pkgver=3.26.0+9+gd6b91cf42
 pkgrel=1
 pkgdesc="A GNOME web browser based on the WebKit rendering engine"
 url="https://wiki.gnome.org/Apps/Web"
@@ -12,7 +12,7 @@ depends=(webkit2gtk gcr gnome-desktop icu)
 makedepends=(intltool itstool docbook-xml startup-notification lsb-release
              gobject-introspection yelp-tools autoconf-archive appstream-glib git)
 groups=(gnome)
-source=("git+https://git.gnome.org/browse/epiphany#branch=master"
+source=("git+https://git.gnome.org/browse/epiphany#branch=gnome-3-26"
         "git+https://git.gnome.org/browse/libgd"
         "git+https://git.gnome.org/browse/gvdb"
         pluginsdir.diff)

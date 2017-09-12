@@ -3,7 +3,7 @@
 # Contributor: Ionut Biru <ibiru@archlinux.org>
 
 pkgname=gnome-screenshot
-pkgver=3.25.0+44+g324d795
+pkgver=3.25.0+47+g16f5112
 pkgrel=1
 pkgdesc="Take pictures of your screen"
 url="https://git.gnome.org/browse/gnome-screenshot"
@@ -12,8 +12,7 @@ license=(GPL2)
 depends=(dconf gtk3 libcanberra)
 makedepends=(intltool git)
 groups=(gnome)
-_commit=8472361f3c23402ffe0367184d497d16984dec0c  # master
-source=("git+https://git.gnome.org/browse/gnome-screenshot#branch=master")
+source=("git+https://git.gnome.org/browse/gnome-screenshot#branch=gnome-3-26")
 sha256sums=('SKIP')
 
 pkgver() {
@@ -24,6 +23,9 @@ pkgver() {
 prepare() {
   mkdir build
   cd $pkgname
+
+  git cherry-pick 07ff6afd07b7fff602d93717dd98d2e7e355592e -n
+  git cherry-pick 324d79505f8506c782763d0ca36ed85ad1bc1af3 -n
 }
 
 build() {

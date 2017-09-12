@@ -2,7 +2,7 @@
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
 pkgname=libpeas
-pkgver=1.21.0+2+g7522ae4
+pkgver=1.22.0
 pkgrel=1
 pkgdesc="A GObject-based plugins engine"
 arch=(i686 x86_64)

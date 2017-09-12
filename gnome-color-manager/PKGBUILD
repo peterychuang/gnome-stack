@@ -2,7 +2,7 @@
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
 pkgname=gnome-color-manager
-pkgver=3.25.90+4+g8276fe8
+pkgver=3.26.0+2+ge528a44
 pkgrel=1
 pkgdesc="GNOME Color Profile Tools"
 arch=(i686 x86_64)

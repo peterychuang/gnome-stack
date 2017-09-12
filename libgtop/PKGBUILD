@@ -2,14 +2,13 @@
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=libgtop
-pkgver=2.37.92+1+gad8e7395
+pkgver=2.38.0
 pkgrel=1
 pkgdesc="A library that reads information about processes and the running system"
 arch=('i686' 'x86_64')
 license=('LGPL')
 depends=('glib2' 'libxau')
 makedepends=('gobject-introspection' gnome-common git gtk-doc)
-_commit=e0f97e7dbd6ec87103705d3e114876d44cb0ca4c  # gnome-2-36
 source=("git+https://git.gnome.org/browse/libgtop#branch=master")
 url="http://www.gnome.org/"
 sha256sums=('SKIP')

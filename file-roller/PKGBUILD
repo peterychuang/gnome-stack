@@ -3,7 +3,7 @@
 # Contributor: Jan de Groot <jgc@archlinux.org>
 
 pkgname=file-roller
-pkgver=3.25.91+2+gd16eacf6
+pkgver=3.26.0
 pkgrel=1
 pkgdesc="Create and modify archives"
 url="https://wiki.gnome.org/Apps/FileRoller"

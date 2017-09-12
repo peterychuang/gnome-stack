@@ -3,7 +3,7 @@
 # Contributor: Jan de Groot <jgc@archlinux.org>
 
 pkgname=gnome-control-center
-pkgver=3.25.92.1+2+g40f2b84a3
+pkgver=3.26.0+1+g43dbc708a
 pkgrel=1
 pkgdesc="GNOME's main interface to configure various aspects of the desktop"
 url="https://git.gnome.org/browse/gnome-control-center"
@@ -22,15 +22,11 @@ optdepends=('system-config-printer: Printer settings'
             'openssh: remote login')
 groups=(gnome)
 options=('!emptydirs')
-source=("git+https://git.gnome.org/browse/gnome-control-center#branch=master"
+source=("git+https://git.gnome.org/browse/gnome-control-center#branch=gnome-3-26"
         "git+https://git.gnome.org/browse/libgnome-volume-control"
         "git+https://git.gnome.org/browse/libgd"
-        window-disable-the-menubar.patch 
-        window-split-the-window-decorations-between-the-header-bars.patch
         )
 sha256sums=('SKIP'
-            'SKIP'
-            'SKIP'
             'SKIP'
             'SKIP')
 
@@ -46,9 +42,6 @@ prepare() {
   git config --local submodule."panels/sound/gvc".url "$srcdir/libgnome-volume-control"
   git config --local submodule.libgd.url "$srcdir/libgd"
   git submodule update
-
-  patch -Np1 < ../window-disable-the-menubar.patch  
-  patch -Np1 < ../window-split-the-window-decorations-between-the-header-bars.patch
 
   NOCONFIGURE=1 ./autogen.sh
 }

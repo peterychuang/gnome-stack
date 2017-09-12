@@ -4,7 +4,7 @@
 # Contributor: Michael Kanis <mkanis_at_gmx_dot_de>
 
 pkgname=mutter
-pkgver=3.25.92
+pkgver=3.26.0
 pkgrel=1
 pkgdesc="A window manager for GNOME"
 url="https://git.gnome.org/browse/mutter"

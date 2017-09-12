@@ -2,7 +2,7 @@
 # Maintainer:  Jan de Groot <jan@archlinux.org>
 
 pkgname=gnome-desktop
-pkgver=3.25.92
+pkgver=3.26.0
 pkgrel=1
 epoch=1
 pkgdesc="Library with common API for various GNOME modules"

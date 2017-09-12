@@ -12,8 +12,7 @@ url="https://git.gnome.org/browse/gsettings-desktop-schemas"
 license=(GPL)
 depends=(glib2 dconf)
 makedepends=(intltool gobject-introspection git gnome-common)
-_commit=a5c759a1d9d7e4825f94da30f0f8fb8abc2e3efb  # tags/3.24.0^0
-source=("git+https://git.gnome.org/browse/gsettings-desktop-schemas#branch=master")
+source=("git+https://git.gnome.org/browse/gsettings-desktop-schemas#branch=gnome-3-26")
 sha256sums=('SKIP')
 
 pkgver() {

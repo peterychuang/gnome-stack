@@ -2,7 +2,7 @@
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=evolution-data-server
-pkgver=3.25.92+3+g18ea6a0f9
+pkgver=3.26.0+6+g9fbd7c1d5
 pkgrel=1
 pkgdesc="Centralized access to appointments and contacts"
 url="https://wiki.gnome.org/Apps/Evolution"
@@ -10,7 +10,7 @@ arch=(i686 x86_64)
 depends=(gnome-online-accounts nss krb5 libgweather libical db libgdata libphonenumber)
 makedepends=(intltool gperf gobject-introspection vala gtk-doc boost git cmake ninja)
 license=(GPL)
-source=("git+https://git.gnome.org/browse/evolution-data-server#branch=master")
+source=("git+https://git.gnome.org/browse/evolution-data-server#branch=gnome-3-26")
 sha256sums=('SKIP')
 
 pkgver() {

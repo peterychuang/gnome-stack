@@ -2,7 +2,7 @@
 # Maintainer: Ionut Biru <ibiru@archlinux.org>
 
 pkgname=baobab
-pkgver=3.25.92+4+g4075864
+pkgver=3.26.0+1+gaaad7da
 pkgrel=1
 pkgdesc="A graphical directory tree analyzer"
 url="https://wiki.gnome.org/Apps/Baobab"

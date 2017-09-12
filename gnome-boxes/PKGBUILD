@@ -3,7 +3,7 @@
 # Contributor: Stefano Facchini <stefano.facchini@gmail.com>
 
 pkgname=gnome-boxes
-pkgver=3.25.90+28+g3607e985
+pkgver=3.26.0+1+gfc546650
 pkgrel=1
 pkgdesc="Simple GNOME application to access remote or virtual systems"
 arch=('i686' 'x86_64')
@@ -12,7 +12,7 @@ license=('LGPL')
 depends=('cdrkit' 'gtk-vnc' 'libarchive' 'libgudev' 'libosinfo' 'libsecret' 'libtracker-sparql'
          'libvirt-glib' 'mtools' 'qemu' 'spice-gtk3')
 makedepends=('gobject-introspection' 'intltool' 'itstool' 'spice-protocol' 'vala')
-source=(git+https://git.gnome.org/browse/gnome-boxes#branch=master)
+source=(git+https://git.gnome.org/browse/gnome-boxes#branch=gnome-3-26)
 sha256sums=('SKIP')
 
 pkgver() {

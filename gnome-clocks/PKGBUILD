@@ -2,7 +2,7 @@
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
 pkgname=gnome-clocks
-pkgver=3.25.90+16+gfdfbcb3
+pkgver=3.26.0+1+g29f6016
 pkgrel=1
 pkgdesc="Clocks applications for GNOME"
 url="https://wiki.gnome.org/Apps/Clocks"
